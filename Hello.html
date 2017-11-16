@@ -6,33 +6,29 @@
     <script>
         var Greetings = ["Here comes dat boi", "ayy lmao", "'Tis but a scratch.", "Bonjour!", "Take me to your leader!"];
         randomGreeting = Math.floor(Math.random() * Greetings.length);
-        document.write(Greetings[randomGreeting], "<br/>")
+        document.write(Greetings[randomGreeting], "<br/> <br/>");
 
-        var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var d = new Date();
-        var weekday = d.getDay();
-        document.write("'I have amnesia so I don't know what today is.' 'Oh, today is ", day[today], " and it's a ", day[weekday], ".'", "<br/>");
-        console.log(weekday);
-
-        document.write("What kind of number is today? It's an ", d.getDay(), "<br/>");
+        var currentDay = new Date();
+        var
 
         var today = new Date();
         var endofschool = new Date("6/8/2018");
         var days = Math.floor((endofschool.getTime() - today.getTime())/1000/60/60/24);
         var hours = Math.floor((endofschool.getTime() - today.getTime())/1000/60/60);
         var minutes = Math.floor((endofschool.getTime() - today.getTime())/1000/60);
-        document.write("The time until the end of the school year is: Days: ", days, " Hours: ", hours, " Minutes: ", minutes, "<br/>");
+        document.write("The time until the end of the school year is: Days: ", days, " Hours: ", hours, " Minutes: ", minutes, "<br/> <br/>");
 
-        var str1 = "san rafael high school";
-        var str2 = "185 mission ave";
-        var str3 = "san rafael ca 94901";
-        var upper1 = str1.toUpperCase();
-        var upper2 = str2.toUpperCase();
-        var upper3 = str3.toUpperCase();
+        var str = "san rafael high school-185 mission ave-san rafael ca 94901";
+        var cut1 = str.slice(0,22);
+        var cut2 = str.slice(24,38);
+        var cut3 = str.slice(39,58);
+        var upper1 = cut1.toUpperCase();
+        var upper2 = cut2.toUpperCase();
+        var upper3 = cut3.toUpperCase();
         document.write(upper1, "<br/>");
         document.write(upper2, "<br/>");
         document.write(upper3, "<br/>");
-        </script>
+    </script>
     </h1>
   </body>
 </html>
