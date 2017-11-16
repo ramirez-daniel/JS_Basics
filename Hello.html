@@ -18,18 +18,21 @@
 
         var today = new Date();
         var endofschool = new Date("6/8/2018");
-        var days = Math.floor((endofschool.getTime() - today.getTime())/10000);
-        var hours = Math.floor()
-        var minutes = Math.floor()
-        document.write("The time until the end of the school year is ", days, ".", "<br/>");
+        var days = Math.floor((endofschool.getTime() - today.getTime())/1000/60/60/24);
+        var hours = Math.floor((endofschool.getTime() - today.getTime())/1000/60/60);
+        var minutes = Math.floor((endofschool.getTime() - today.getTime())/1000/60);
+        document.write("The time until the end of the school year is: Days: ", days, " Hours: ", hours, " Minutes: ", minutes, "<br/>");
 
         var str1 = "san rafael high school";
         var str2 = "185 mission ave";
         var str3 = "san rafael ca 94901";
-        var upper1 =
-        var upper2 =
-        var upper3 =
-    </script>
+        var upper1 = str1.toUpperCase();
+        var upper2 = str2.toUpperCase();
+        var upper3 = str3.toUpperCase();
+        document.write(upper1, "<br/>");
+        document.write(upper2, "<br/>");
+        document.write(upper3, "<br/>");
+        </script>
     </h1>
   </body>
 </html>
