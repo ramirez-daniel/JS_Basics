@@ -8,8 +8,24 @@
         randomGreeting = Math.floor(Math.random() * Greetings.length);
         document.write(Greetings[randomGreeting], "<br/> <br/>");
 
-        var currentDay = new Date();
-        var
+        var Months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+        var t = new Date();
+        var whichMonth = t.getMonth();
+        var h = new Date();
+        var whichDay = h.getDay();
+        var f = new Date();
+        var whichYear = f.getFullYear();
+        document.write("'Oh, I have amnesia, what is today's date?' 'The date is '", Months[whichMonth], "/", whichDay, "/", whichYear, ".'", "<br/>");
+
+        var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var p = new Date();
+        var evenorodd = p.getDate();
+        console.log(evenorodd);
+        if (whichDay % 2 == 0) {
+            document.write('I forgot, today is also an even day', '<br/> <br/>');
+        } else {
+            document.write('I forgot, today is also an odd day', '<br/> <br/>');
+        }
 
         var today = new Date();
         var endofschool = new Date("6/8/2018");
